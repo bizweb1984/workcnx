@@ -24,7 +24,6 @@ jobs:
           context: .
           push: true
           tags: mihajlo1984/react-k8s-app:${{ github.sha }}
-                - name: Deploy to Kubernetes
       - name: Deploy to Kubernetes          
         with:
           script: |
