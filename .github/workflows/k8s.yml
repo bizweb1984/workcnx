@@ -24,7 +24,3 @@ jobs:
           context: .
           push: true
           tags: mihajlo1984/react-k8s-app:${{ github.sha }}
-      - name: Deploy to Kubernetes          
-        with:
-          script: |
-            kubectl set image deployment/react-app react-container=mihajlo1984/react-k8s-app:${{ github.sha }}
